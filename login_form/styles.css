@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+:root {
+  --primary-color: #735fcd;
+  --secondary-color: #aa87e3;
+  --text-color: #84899c;
+  --bg-color: #bfa1ea;
+  --bg-color-light: #f4f3fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--bg-color-light);
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 960px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-wrapper {
+  padding: 40px 120px 60px 40px;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--secondary-color),
+    var(--primary-color)
+  );
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #fff;
+  min-height: 550px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.feature p {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.feature-icon {
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+}
+
+.form {
+  padding: 60px 100px 60px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.form-heading {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.form-control {
+  display: inline-block;
+}
+
+.form-control label {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.form-control input:not([type="radio"]) {
+  width: 100%;
+  border: 3px solid var(--bg-color-light);
+  outline: none;
+  padding: 12px 20px;
+  margin-top: 10px;
+  font-family: inherit;
+  font-size: 0.8rem;
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+.form-control small {
+  color: var(--text-color);
+}
+
+.btn {
+  background-color: var(--primary-color);
+  padding: 15px 40px;
+  color: #fff;
+  font-family: inherit;
+  font-weight: 400;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
